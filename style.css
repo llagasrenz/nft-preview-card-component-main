@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+
+:root{
+/* mainbg */
+--verydarkbluemainbg: hsl(217, 54%, 11%);
+
+/* card BG */
+--Verydarkbluecardbg: hsl(216, 50%, 16%);
+
+/* line */
+--Verydarkblueline: hsl(215, 32%, 27%);
+
+--White: hsl(0, 0%, 100%);
+
+
+--softblue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+
+body{
+    font-size: 18px;
+    background-color: var(--verydarkbluemainbg);
+    margin: 1.625rem;
+    font-family: "outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+
+}
+
+.container{
+    background-color: var(--Verydarkbluecardbg);
+    border-radius: 0.625rem;
+    padding:1.25rem;
+    box-shadow: 5px 5px 5px rgba(0.2,.2,0.2,.02);
+    margin-bottom: 2rem;
+      
+}
+
+.nftimage{
+    border-radius: 0.625rem;
+    margin-bottom: 2rem;
+    
+}
+
+.container .avatar{
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+    
+}
+
+.container .desc{
+    text-align: left;
+    color: var(--softblue);
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+}
+
+.container h2{
+    color: var(--White);
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.priceandday{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.price{
+    color: var(--cyan);
+    align-items: center;
+    font-weight: 600;
+}
+
+.day{
+    color: var(--softblue);
+}
+
+
+.container .line{
+    margin-bottom: 2rem;
+    border: 1px solid var(--Verydarkblueline);
+  
+}
+
+.creator{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.avatarimage{
+    width: 32px;
+    border-radius: 50%;
+    border: 2px white solid;
+}
+
+
+.creatorname{
+    color: var(--softblue);
+}
+
+.name{
+    color: var(--White);
+    font-weight: 400;
+}
+@media (min-width: 500px){
+    .container{
+        width: 400px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); }
